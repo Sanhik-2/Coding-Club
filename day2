@@ -1,0 +1,129 @@
+This the second day of Coding Club at SRM AP. And my task here is to write about Generative AI.
+
+Artificial intelligence (AI) has emerged as one of the defining technologies of the modern era. At its core, AI refers to the branch of computer science focused on building machines and software that can simulate human intelligence. This involves enabling computers to perform activities that traditionally required human cognition, such as perceiving environments, recognizing speech, reasoning through decisions, translating languages, and learning from experience. Rather than relying solely on rigid, hand-written rules for every possible scenario, modern artificial intelligence systems rely on algorithms that process data, identify patterns, and make informed predictions or actions based on what they observe.
+
+Over recent decades, artificial intelligence has evolved from theoretical laboratory concepts into practical tools integrated into everyday consumer and enterprise systems. Today, it serves as the underlying engine behind search engines, automated customer service, recommendation feeds, autonomous vehicles, and diagnostic software. To understand how these modern systems function, it is helpful to look at the broader landscape of AI, the mechanisms of generative systems, the role of large language models, the principles of reinforcement learning, and the common categories into which artificial intelligence is organized.
+
+---
+
+## The Broader Spectrum of Artificial Intelligence
+
+The field of artificial intelligence encompasses several tiers and technical methodologies. Broadly speaking, artificial intelligence can be categorized into three theoretical levels of capability:
+
+* **Narrow AI (Weak AI):** This represents virtually all existing artificial intelligence deployed today. Narrow AI is designed, trained, and optimized to perform a single specific task or a small, clearly defined set of tasks. Examples include email spam filters, facial recognition algorithms, chess-playing engines, and voice-activated virtual assistants. While these tools can perform their specific tasks with remarkable speed and accuracy, they lack general awareness, cannot apply their knowledge outside their domain, and do not possess genuine comprehension.
+* **Artificial General Intelligence (AGI):** AGI remains a theoretical goal within computer science. It describes an artificial system that possesses the capacity to understand, learn, and apply intellectual capabilities across a wide range of tasks at a level comparable to human ability. An AGI system would theoretically be able to transfer knowledge from one domain to another, solve novel problems without specific pre-training, and demonstrate abstract reasoning.
+* **Artificial Superintelligence (ASI):** A hypothetical form of AI that would surpass human intellectual capabilities across every metric, including scientific creativity, general wisdom, and social skills. ASI remains a subject of theoretical research, philosophy, and science fiction.
+
+From a structural perspective, artificial intelligence is often organized into sub-disciplines:
+
+* **Machine Learning (ML):** A foundational subset of AI where systems are not explicitly programmed with step-by-step instructions. Instead, they ingest large quantities of historical data and use statistical methods to train mathematical models to recognize patterns and make predictions.
+* **Deep Learning (DL):** A specialized branch of machine learning based on artificial neural networks inspired loosely by the human brain's interconnected neurons. Deep learning architectures feature multiple layers of processing that automatically extract complex, high-level features from unstructured data such as images, audio, and raw text.
+* **Computer Vision:** The domain focused on enabling machines to extract meaningful information from digital images, video streams, and other visual inputs.
+* **Natural Language Processing (NLP):** The field dedicated to giving computers the ability to read, decipher, understand, and generate human languages.
+
+---
+
+## What is Generative AI?
+
+Generative artificial intelligence, commonly referred to as Generative AI or GenAI, represents a notable shift in how machines interact with human creativity and data. For much of its history, traditional machine learning focused primarily on **discriminative** tasks. Discriminative models classify, sort, filter, or predict labels based on existing inputs—for example, determining whether an image contains a cat, assessing whether a financial transaction is fraudulent, or predicting tomorrow's weather based on historical atmospheric data.
+
+Generative AI, by contrast, focuses on **creation**. Rather than simply categorizing an input, generative models are trained to produce entirely new, plausible artifacts that resemble the data they were trained on. Depending on the architecture and training dataset, generative models can create:
+
+* **Text:** Articles, summaries, computer code, dialogue, poetry, and structured data formats like JSON or CSV.
+* **Images:** Realistic photographs, digital artwork, design mockups, and diagrams generated from textual descriptions.
+* **Audio:** Human-like synthetic speech, voice cloning, music compositions, and ambient sound effects.
+* **Video:** Synthesized video footage, animations, and motion sequences derived from text or reference imagery.
+* **3D Models & Scientific Data:** Molecular structures, synthetic biological sequences, and three-dimensional digital assets for gaming and manufacturing.
+
+Generative AI achieves this by learning the underlying statistical distribution of its training data. By examining millions or billions of examples, the model maps out the relationships between different data points. When prompted with an instruction or a starting seed, the model samples from this learned distribution to assemble an original output that mimics the style, grammar, or visual structure of the original data, without directly copying it word-for-word or pixel-for-pixel.
+
+---
+
+## Large Language Models (LLMs) at the Surface Level
+
+Large Language Models (LLMs) represent the most widely used and visible application of generative AI today. At a high level, an LLM is an advanced natural language processing system trained on immense collections of written material—including books, websites, articles, and code repositories.
+
+### Core Architecture and Mechanism
+
+Most modern LLMs are built on an architectural foundation known as the **Transformer**, introduced in 2017. Transformers use a mechanism called "self-attention," which allows the model to analyze an entire block of text at once rather than reading it strictly word by word from left to right. This enables the system to weigh the relevance of different words relative to one another, maintaining context across long passages.
+
+At its most fundamental mathematical level, an LLM functions as a **next-token predictor**:
+
+1. **Tokenization:** Text is divided into smaller units called tokens, which can represent whole words, syllables, or individual characters.
+2. **Probability Calculation:** When given an input prompt, the model calculates the mathematical probability of what token should logically follow next, based on the statistical patterns it observed across its training data.
+3. **Iterative Generation:** The model selects the next token, appends it to the sequence, and repeats the calculation to choose the subsequent token. By repeating this process thousands of times in fractions of a second, the model constructs coherent, structured sentences, paragraphs, and essays.
+
+### Training Stages
+
+The creation of an LLM typically involves two major phases:
+
+* **Pre-training:** The model ingests massive datasets in an unsupervised or self-supervised manner to learn general grammar, factual relationships, reasoning patterns, and cultural references. This stage requires vast computational resources and produces a "base model."
+* **Fine-Tuning and Alignment:** The base model is further trained on curated datasets containing specific instructions, questions, and high-quality answers. Techniques such as instruction-tuning help the model understand how to act as a helpful conversational assistant rather than merely continuing a string of text.
+
+---
+
+## The Fundamentals of Reinforcement Learning
+
+While supervised learning trains models using clearly labeled pairs of inputs and outputs, **Reinforcement Learning (RL)** operates on a completely different paradigm inspired by behavioral psychology: learning through trial, error, and feedback.
+
+In reinforcement learning, an autonomous software entity known as an **agent** interacts with an external **environment**. The agent's goal is to maximize a cumulative score, called a **reward**, over time.
+
+```
++-------------+                     +-------------+
+|             |       Action        |             |
+|             | ------------------> |             |
+|    Agent    |                     | Environment |
+|             | <------------------ |             |
+|             |    State & Reward   |             |
++-------------+                     +-------------+
+
+```
+
+### Key Components of Reinforcement Learning
+
+* **Agent:** The learner or decision-maker.
+* **Environment:** The external world, simulation, or platform with which the agent interacts.
+* **State:** The current condition or snapshot of the environment at any given moment.
+* **Action:** Any choice, move, or operation available to the agent within the environment.
+* **Reward:** Feedback sent from the environment to the agent after an action is taken. A reward can be positive (encouraging the behavior) or negative (penalizing undesirable outcomes).
+* **Policy:** The agent's internal strategy or mathematical rulebook that maps perceived states to the best possible actions.
+
+Through repeated cycles of taking actions, observing changes in the environment's state, and receiving numerical rewards or penalties, the agent adjusts its policy. Over millions of simulated iterations, it learns which actions produce the highest cumulative return.
+
+### Reinforcement Learning in Modern AI
+
+Historically, reinforcement learning was best known for mastering complex games with defined rules—such as chess, Go, and classic arcade titles—often discovering strategies that human players had never considered. In industrial settings, RL is applied to robotics control, algorithmic trading, and supply chain routing.
+
+In the context of generative AI and LLMs, a specialized hybrid process called **Reinforcement Learning from Human Feedback (RLHF)** plays a central role. In RLHF:
+
+1. Human evaluators review multiple outputs produced by a language model and rank them based on helpfulness, accuracy, safety, and tone.
+2. A secondary "reward model" is trained to mimic these human preferences.
+3. The main language model is then adjusted via reinforcement learning algorithms using the reward model's scores as feedback, steering the AI toward producing safer, clearer, and more contextually appropriate answers.
+
+---
+
+## Comparing Core AI Approaches
+
+| Category | Primary Objective | Common Methods / Concepts | Typical Use Cases |
+| --- | --- | --- | --- |
+| **Traditional / Discriminative ML** | Analyze existing data to classify, predict numerical values, or detect anomalies. | Decision trees, regression, support vector machines, classical neural networks. | Credit scoring, spam detection, medical diagnostics, weather forecasting. |
+| **Generative AI** | Create new, original content that mirrors the structure of training examples. | Transformers, diffusion models, generative adversarial networks (GANs). | Draft writing, digital art generation, synthetic voice, automated coding. |
+| **Large Language Models (LLMs)** | Interpret, generate, and manipulate natural language at scale. | Self-attention mechanisms, token prediction, pre-training, fine-tuning. | Conversational assistants, document summarization, language translation. |
+| **Reinforcement Learning (RL)** | Learn optimal decision-making strategies through simulated trial and error. | Agents, environments, reward functions, policies, Q-learning, RLHF. | Robotics navigation, autonomous gameplay, resource allocation, model alignment. |
+
+---
+
+## Current Landscape and Considerations
+
+Modern artificial intelligence relies on the convergence of massive digital datasets, powerful specialized hardware (such as graphics processing units, or GPUs), and refined algorithmic designs. As these technologies continue to develop, they offer significant efficiency improvements across industries, automating routine administrative tasks and aiding complex technical workflows.
+
+At the same time, the widespread adoption of AI introduces practical considerations that researchers, businesses, and policymakers navigate:
+
+* **Factual Accuracy:** Generative systems can produce plausible-sounding but factually incorrect statements, commonly referred to as hallucinations.
+* **Data Quality and Bias:** Because models learn from historical human data, they can inadvertently inherit and amplify existing biases or inaccuracies present in those sources.
+* **Resource Demands:** Training and running advanced models requires substantial computational power and energy infrastructure.
+* **Governance and Intellectual Property:** Questions surrounding data ownership, copyright in synthetic outputs, and the ethical deployment of autonomous systems continue to evolve alongside technical capabilities.
+
+By providing systems that can both analyze vast quantities of data and generate new material based on learned patterns, artificial intelligence continues to expand the scope of computational problem-solving across society.
+
+On top of that, I was supposed to be a part of any online Hackathon in this week. I was a part of rote playoffs Hackathon here:https://luma.com/rotehack?tk=6zHGVc
