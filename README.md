@@ -76,3 +76,14 @@ This repo will contain everything regarding my tasks in Coding Club at SRM AP.
  |_| |___\___|_|\_\ \___/     |_| \___/|___/
 EOF
 ```
+---
+
+### 📌 Quick Navigation
+* [Day 1 Tasks](./day1/)
+* [Day 2 Tasks](./day2/)
+* [Resources & Notes](./notes/)
+
+### 🚀 Progress Tracker
+- [x] Environment & Tooling Setup
+- [ ] Core Problem Sets
+- [ ] Mini Project Submission
