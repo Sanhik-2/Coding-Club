@@ -1,7 +1,6 @@
-This is the Readme for Coding Club SRM AP. This repo will contain everything regarding my tasks in Coding Club at SRM AP. 
+# Coding Club SRM AP
 
-
-This is the Readme for Coding Club SRM AP. This repo will contain everything regarding my tasks in Coding Club at SRM AP.
+This repo will contain everything regarding my tasks in Coding Club at SRM AP.
 
 ```text
  ____________________________________________________________________
@@ -42,8 +41,8 @@ This is the Readme for Coding Club SRM AP. This repo will contain everything reg
    |____________|          |____________|
 ```
 
-'''text
-+---------------------+   +---------------------+
+```text
+ +---------------------+   +---------------------+
  | >_ git commit -m    |   | 10100100 11010011   |
  | "works on my machine|   | 01101111 00101101   |
  |                     |   | 11001010 10110001   |
@@ -54,24 +53,26 @@ This is the Readme for Coding Club SRM AP. This repo will contain everything reg
  _________________________________________________
  \   [ESC] [ Q W E R T Y ] [ENTER]     [ MOUSE ]  /
   \______________________________________________/
+```
 
-
+```text
   (main)  o---o---o-------o---> [production]
-                 \         /
-    (feature)     o---o---o-----> [merge: ready]
-                       \
-    (bugfix)            o-------> [hotfix: applied]
+               \         /
+  (feature)     o---o---o-----> [merge: ready]
+                     \
+  (bugfix)            o-------> [hotfix: applied]
   
-    ================================================
-     STATUS: 0 ERRORS | 0 WARNINGS | 100% COMMITTED
-    ================================================
+  ================================================
+   STATUS: 0 ERRORS | 0 WARNINGS | 100% COMMITTED
+  ================================================
+```
 
-    ┌──(srm_ap㉿coding_club)-[~/repo]
-    └─$ cat << 'EOF'
-      ___ ___ ___ _  _  ___     _____ ___  ___ 
-     | _ \ __/ __| |/ / / _ \   |_   _/ _ \/ __|
-     |  _/ _| (__| ' < | (_) |    | || (_) \__ \
-     |_| |___\___|_|\_\ \___/     |_| \___/|___/
-    EOF
-
-    '''
+```text
+┌──(srm_ap㉿coding_club)-[~/repo]
+└─$ cat << 'EOF'
+  ___ ___ ___ _  _  ___     _____ ___  ___ 
+ | _ \ __/ __| |/ / / _ \   |_   _/ _ \/ __|
+ |  _/ _| (__| ' < | (_) |    | || (_) \__ \
+ |_| |___\___|_|\_\ \___/     |_| \___/|___/
+EOF
+```
